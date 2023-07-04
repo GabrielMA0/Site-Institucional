@@ -10,24 +10,34 @@
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- JS -->
+    <script src="/js/script.js" defer></script>
     <!-- ICON -->
     <link rel="shortcut icon" href="/img/icon.ico" type="image/x-icon">
+    <!-- Google Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <section class="contact">
-            <span>Contato:</span>
-            <span><img src="/img/whatsapp (3)_1.png" alt="logo whatsapp" title="Whatsapp" width="25" height="25"></span>
-            <span class="whatsapp-number"><a href="https://api.whatsapp.com/send?nene=5511986249335" target="_blank">(11) 98624-9335</a></span>
-            <span class="divider">|</span>
-            <span><img src="/img/communications.png" alt="telefone branco" title="Telefone Fixo"></span>
-            <span class="phone-number"><a href="tel:%20(11)%204562-3883" target="_blank">(11) 4562-3883</a></span>
+            <span class="contact-text">Contato:</span>
+            <div class="container-numbers">
+                <span><img src="/img/icon-whatsapp.webp" alt="logo whatsapp" title="Whatsapp" width="25" height="25"></span>
+                <span class="whatsapp-number"><a href="https://api.whatsapp.com/send?nene=5511986249335" target="_blank">(11) 98624-9335</a></span>
+            </div>
+            <div class="container-numbers">
+                <span class="span-phone"><span class="material-symbols-outlined">
+                phone_in_talk
+                </span></span>
+                <span class="phone-number"><a href="tel:%20(11)%204562-3883" target="_blank">(11) 4562-3883</a></span>
+            </div>
+            
         </section>
 
         <section class="nav-mobile">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a href="index.html"><img class="menu-img-mobile" src="/img/logo.png" alt="logo"></a>
+                    <a href="index.html"><img class="menu-img-mobile" src="/img/logo.png" alt="Logo LMI Autopeças"></a>
                   <button
                     class="navbar-toggler"
                     type="button"
@@ -42,32 +52,24 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#home"
-                          ><font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit">Início</font></font
-                          ></a
-                        >
+                        <a class="nav-link" aria-current="page" href="#home">
+                          <span style="vertical-align: inherit">Início</span>
+                        </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#container2"
-                          ><font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit">Sobre Nós</font></font
-                          ></a
-                        >
+                        <a class="nav-link" href="#about-company">
+                          <span style="vertical-align: inherit">Sobre Nós</span>
+                        </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#services"
-                          ><font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit">Serviços</font></font
-                          ></a
-                        >
+                        <a class="nav-link" aria-current="page" href="#services">
+                          <span style="vertical-align: inherit">Serviços</span>
+                        </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#budget2"
-                          ><font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit">Orçamentos</font></font
-                          ></a
-                        >
+                        <a class="nav-link" href="#budget2">
+                          <span style="vertical-align: inherit">Orçamentos</span>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -76,10 +78,17 @@
         </section>
 
         <section class="menu">
-            <nav class="menu-background">
-                <a href="index.html"><img class="menu-img" src="/img/logo.png" alt="logo"></a>
+            <nav id="menu-static" class="menu-background">
+                <a href="index.html"><img class="menu-img" src="/img/logo.png" alt="logo LMI Auto Peças"></a>
                 <span><a href="#home">Início</a></span>
-                <span><a href="#container2">Sobre nós</a></span>
+                <span><a href="#about-company">Sobre nós</a></span>
+                <span><a href="#services">Serviços</a></span>
+                <span><a href="#budget2">Orçamento</a></span>
+            </nav>
+            <nav id="menu-fixed" class="menu-background hide fixed">
+                <a href="index.html"><img class="menu-img" src="/img/logo.png" alt="logo LMI Auto Peças"></a>
+                <span><a href="#home">Início</a></span>
+                <span><a href="#about-company">Sobre nós</a></span>
                 <span><a href="#services">Serviços</a></span>
                 <span><a href="#budget2">Orçamento</a></span>
             </nav>
@@ -124,11 +133,11 @@
                     <p class="presentation-principal-p1">O nosso diferencial é a qualidade no atendimento, agilidade e prestação de serviços. Fazemos os reparos nos faróis, lanternas e retrovisores, 
                     consertamos pequenos trincos para recuperação de lanternas.</p>
                     <div class="btns">
-                        <button class="btn-whatsapp"><img src="/img/whatsapp (3)_1.png" alt="whatsapp"><a href="https://api.whatsapp.com/send?phone=5511986249335" target="_blank">(11) 98624-9335</a></button>
-                        <button class="btn-phone"><img src="/img/telephone (1)-min.png" alt="telefone"><a href="tel:%20(11)%204562-3883" target="_blank">(11) 4562-3883</a></button>
+                        <button class="btn-whatsapp"><img src="/img/icon-whatsapp.webp" alt="whatsapp" width="25" height="25"><a href="https://api.whatsapp.com/send?phone=5511986249335" target="_blank">(11) 98624-9335</a></button>
+                        <button class="btn-phone"><img src="/img/telephone (1)-min.png" alt="telefone" width="25" height="25"><a href="tel:%20(11)%204562-3883" target="_blank">(11) 4562-3883</a></button>
                     </div>
                     <p class="presentation-principal-p2">Role para baixo</p>
-                    <a href="#container2"><img class="presentation-principal-gif" src="/img/seta-branca.gif" alt="gif seta para baixo"></a>
+                    <a href="#about-company"><img class="presentation-principal-gif" src="/img/seta-branca.gif" alt="gif seta para baixo"></a>
             </div>
         </section>
 
@@ -147,7 +156,7 @@
                 <h2 class="address-title">Nosso endereço:</h2>
                 <p class="address-text">Av. Corifeu de Azevedo Marques, 5135 - Vila Lageado, São Paulo - SP, 05339-004</p>
             </div>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3720494842437!2d-46.754331648881774!3d-23.555077667171457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce55feaf09d395%3A0x28778d53e1bbe70f!2sAv.%20Corifeu%20de%20Azevedo%20Marques%2C%205135%20-%20Vila%20Lageado%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005339-004!5e0!3m2!1spt-BR!2sbr!4v1668919612505!5m2!1spt-BR!2sbr" width="100vw" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3719122112475!2d-46.752137600000005!3d-23.5550826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce55feaf09d395%3A0x28778d53e1bbe70f!2sAv.%20Corifeu%20de%20Azevedo%20Marques%2C%205135%20-%20Vila%20Lageado%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005339-004!5e0!3m2!1spt-BR!2sbr!4v1688340334090!5m2!1spt-BR!2sbr" width="1170" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section class="background">
@@ -169,8 +178,8 @@
                     <img src="/img/1029_(1)_1.png" alt="atendente">
                 </div>
                 <div class="budgets-btns btns ">
-                    <button class="btn-whatsapp btn-budgets-whatsapp"><img src="/img/whatsapp (3)_1.png" alt="whatsapp" class="img-whatsapp"><a href="https://api.whatsapp.com/send?phone=5511986249335" target="_blank">&nbsp;(11) 98624-9335</a></button>
-                    <button class="btn-phone btn-budgets-phone"><img src="/img/telephone (1)-min.png" alt="telefone" class="img-phone"><a href="tel:%20(11)%204562-3883" target="_blank">&nbsp;(11) 4562-3883</a></button>
+                    <button class="btn-whatsapp btn-budgets-whatsapp"><img src="/img/icon-whatsapp.webp" alt="whatsapp" class="img-whatsapp" width="25" height="25"><a href="https://api.whatsapp.com/send?phone=5511986249335" target="_blank">(11) 98624-9335</a></button>
+                    <button class="btn-phone btn-budgets-phone"><img src="/img/telephone (1)-min.png" alt="telefone" width="25" height="25" class="img-phone"><a href="tel:%20(11)%204562-3883" target="_blank">(11) 4562-3883</a></button>
                 </div>
             </div>
 
@@ -253,20 +262,24 @@
                 <p class="budget2-texto-p">Entre em contato com nossa equipe e solicite um orçamento, todos os nossos orçamentos são gratuitos.</p>
             </div>
             <div class="btns">
-                <button class="btn-whatsapp"><img src="/img/whatsapp (3)_1.png" alt="whatsapp"><a href="https://api.whatsapp.com/send?phone=5511986249335" target="_blank">&nbsp;(11) 98624-9335</a></button>
-                <button class="btn-phone"><img src="/img/telephone (1)-min.png" alt="telefone"><a href="tel:%20(11)%204562-3883" target="_blank">&nbsp;(11) 4562-3883</a></button>
+                <button class="btn-whatsapp"><img src="/img/icon-whatsapp.webp" alt="whatsapp" width="25" height="25"><a href="https://api.whatsapp.com/send?phone=5511986249335" target="_blank">(11) 98624-9335</a></button>
+                <button class="btn-phone"><img src="/img/telephone (1)-min.png" alt="telefone" width="25" height="25"><a href="tel:%20(11)%204562-3883" target="_blank">(11) 4562-3883</a></button>
             </div>
             <div class="budget2-form-img">
                 <div class="budget2-img">
                     <img src="/img/20943665-min-min.png" alt="solicitar orçamento">
                 </div>  
                 
-                <form class="budget2-form">
-                    <input type="text" placeholder="Seu nome" required pattern="[A-Za-z\s]+">
+                <form action="https://formsubmit.co/your@email.com" method="POST" class="budget2-form">
+                    <input type="text" placeholder="Seu nome" name="Nome" required pattern="[A-Za-z\s]+">
                     <input type="email" placeholder="Seu e-mail" required>
-                    <input type="tel" placeholder="Seu telefone" required>
-                    <input type="text" placeholder="Sua mensagem" required>
-                    <button>Enviar</button>
+                    <input type="tel" placeholder="Seu telefone" name="Telefone" required>
+                    <input type="text" placeholder="Sua mensagem"  name="Mensagem" required>
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display:none">
                 </form>
             </div>
         </section>
@@ -275,15 +288,16 @@
     <footer>
         <div class="footer-background">
             <section class="footer-fundo">
-                <p><img src="/img/relógio.png" alt="">&nbsp;<strong>Horário de funcionamento:</strong> Segunda a Sexta das <strong>08:00</strong>hrs as <strong>18:00</strong>hrs , Sabádo: <strong>08:00</strong>hrs as <strong>14:00</strong>hrs.</p>
-                <p>&nbsp;</p>
+                <p><img class="clock-img" src="/img/relógio.png" alt="Imagem de um relógio"><strong>Horário de funcionamento:</strong> Segunda a Sexta das <strong>08:00</strong>hrs as <strong>18:00</strong>hrs , Sabádo: <strong>08:00</strong>hrs as <strong>14:00</strong>hrs.</p>
+                <br>
                 <p><strong>Nosso Endereço</strong>: Av. Corifeu de Azevedo Marques, 5135 - Vila Lageado, São Paulo - SP, 05339-004</p>
-                <p>&nbsp;</p>   
-                <p>Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nosso site,</p>
-                <p>ao utilizar nosso site, você concorda com tal monitoramento. Leia nossa <strong>Política de Privacidade</strong>.</p>
-                <p>&nbsp;</p>      
-                <p>As imagens aqui vinculadas são meramente ilustrativas, logotipo e marca são de nossa propriedade.</p>       
-                <p>É vetada a sua reprodução, total ou parcial, sem a expressa autorização da administradora do site.</p>    
+                <br>   
+                <p>Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nosso site, <br>
+                ao utilizar nosso site, você concorda com tal monitoramento. Leia nossa <strong><a class="link-privacy-policy-page" href="/Pages/politica_de_privacidade.html">Política de Privacidade</a>
+                </strong>.</p>
+                <br>      
+                <p>As imagens aqui vinculadas são meramente ilustrativas, logotipo e marca são de nossa propriedade. <br>    
+                É vetada a sua reprodução, total ou parcial, sem a expressa autorização da administradora do site.</p>    
                 <p>Copyright © - <strong>Desenvolvido por Gabriel Araújo</strong></p>
             </section>
         </div>
