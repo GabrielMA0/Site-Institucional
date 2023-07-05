@@ -17,89 +17,87 @@ window.addEventListener("scroll", function () {
     }
 });
 
-window.sr = ScrollReveal({ reset: true });
-
-sr.reveal(".contact", {
-    duration: 1000,
+ScrollReveal().reveal(".contact", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal("#carouselExampleControls", {
-    duration: 1000,
+ScrollReveal().reveal("#carouselExampleControls", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal(".presentation-principal", {
-    duration: 1000,
+ScrollReveal().reveal(".presentation-principal", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal("#about-company", {
-    duration: 1000,
+ScrollReveal().reveal("#about-company", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal("#address", {
-    duration: 1000,
+ScrollReveal().reveal("#address", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal(".Budget-texts", {
-    duration: 1000,
+ScrollReveal().reveal(".Budget-texts", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal(".budgets-img-btns", {
-    duration: 1000,
+ScrollReveal().reveal(".budgets-img-btns", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal("#carouselExampleControls2", {
-    duration: 1000,
+ScrollReveal().reveal("#carouselExampleControls2", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal(".services-conteudo", {
-    duration: 1000,
+ScrollReveal().reveal(".services-conteudo", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal("#delivery", {
-    duration: 1000,
+ScrollReveal().reveal("#delivery", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal(".budget2-texto", {
-    duration: 1000,
+ScrollReveal().reveal(".budget2-texto", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal(".btns", {
-    duration: 1000,
+ScrollReveal().reveal(".btns", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal(".budget2-form-img", {
-    duration: 1000,
+ScrollReveal().reveal(".budget2-form-img", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
-sr.reveal(".footer-fundo", {
-    duration: 1000,
+ScrollReveal().reveal(".footer-fundo", {
+    duration: 1500,
     distance: "50px",
-    delay: 100,
+    delay: 200,
     mobile: false,
 });
