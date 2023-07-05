@@ -117,16 +117,6 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: none;
 }
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 .background {
     width: 100%;
 }
@@ -166,7 +156,6 @@ header {
     align-items: center;
     margin-top: 6em;
     color: var(--color-text);
-    animation: fadeIn 1.5s;
 }
 .presentation-principal-h1 {
     font-size: 30px;
@@ -202,7 +191,6 @@ header {
     height: 456px;
     gap: 30px;
     background-color: var(--background-color-light);
-    animation: fadeIn 2s;
 }
 .about-company-title {
     width: 525.44px;
@@ -227,7 +215,6 @@ header {
     color: var(--color-text2);
     text-align: center;
     background-color: #fcfcfc;
-    animation: fadeIn 2s;
 }
 .address-title {
     font-size: 35px;
@@ -262,14 +249,13 @@ header {
     margin: 0;
     text-align: center;
     font-weight: 700;
-    animation: fadeIn 2s;
 }
 .budgets-list {
     font-size: 25px;
     text-align: center;
     list-style: none;
     margin: 0;
-    animation: fadeIn 2s;
+    padding: 0;
 }
 .budgets-list li span {
     color: #5bfbfe;
@@ -279,7 +265,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 2s;
     gap: 5em;
 }
 .budgets-img {
@@ -343,7 +328,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 2s;
 }
 .services-estrelas {
     display: flex;
@@ -363,7 +347,6 @@ header {
     align-items: center;
     background-color: var(--background-color-light);
     gap: 50px;
-    animation: fadeIn 2s;
 }
 .delivery-img {
     display: flex;
@@ -402,7 +385,6 @@ header {
     text-align: center;
     color: var(--color-text);
     width: 806px;
-    animation: fadeIn 2s;
 }
 .budget2-texto-h2 {
     font-size: 40px;
@@ -418,7 +400,6 @@ header {
     justify-content: space-evenly;
     width: 90%;
     height: 392px;
-    animation: fadeIn 2s;
 }
 .budget2-form {
     display: flex;
@@ -454,11 +435,10 @@ header {
     );
     border-radius: 50px;
     border: none;
+    transition: 0.3s;
 }
 .budget2-form button:hover {
     scale: 0.9;
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
     cursor: pointer;
 }
 .footer-background {
@@ -477,7 +457,6 @@ header {
     text-align: center;
     margin: 0 auto;
     padding: 25px 20px;
-    animation: fadeIn 2s;
 }
 .footer-fundo p {
     margin: 0;
@@ -641,7 +620,6 @@ header {
     }
     .budgets-title {
         font-size: 25px;
-        padding-bottom: 20px;
     }
     .budgets-img-btns {
         display: flex;
@@ -664,7 +642,7 @@ header {
         overflow: hidden;
     }
     .services-logo {
-        height: 3em;
+        width: 90%;
     }
     .services-h2 {
         width: 95vw;
@@ -701,7 +679,7 @@ header {
     }
     .budget2-texto-p {
         width: 100%;
-        padding: 20px 0 20px 0;
+        padding: 20px 10px 20px 10px;
     }
     .budget2-form-img {
         flex-direction: column;
