@@ -489,7 +489,7 @@ header {
     color: #189d0e;
     border-right: 2px solid black;
 }
-.content {
+.privacy-policy {
     background: rgb(86, 124, 242);
     background: linear-gradient(
         180deg,
@@ -498,7 +498,7 @@ header {
     );
     width: 100%;
 }
-.background-politica-de-privacidade {
+.background-privacy-policy {
     background-color: #f5f5f5;
 }
 .privacy-policy-title {
@@ -513,7 +513,7 @@ header {
     text-align: center;
     color: var(--color-text2);
 }
-.teste {
+.privacy-policy-text-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -523,15 +523,15 @@ header {
     color: var(--color-text);
     font-size: 14px;
 }
-.teste h2 {
+.privacy-policy-text-container h2 {
     font-size: 14px;
     font-weight: bold;
 }
-.teste2 {
+.privacy-policy-text-img {
     display: flex;
     width: 100%;
 }
-.teste2 img {
+.privacy-policy-text-img img {
     width: 213px;
     height: 213px;
 }

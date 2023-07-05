@@ -2,7 +2,7 @@ var staticMenu = document.querySelector("#menu-static");
 var fixedMenu = document.querySelector("#menu-fixed");
 var upperLimit = staticMenu.offsetTop;
 
-// Animação de rolagem do scroll
+// DEIXANDO O MENU FIXO
 window.addEventListener("scroll", function () {
     // Obtém a posição superior do elemento
     var scrollTop = window.scrollY || document.documentElement.scrollTop; // Obtém o valor do scroll vertical
@@ -16,6 +16,8 @@ window.addEventListener("scroll", function () {
         staticMenu.style.opacity = "1";
     }
 });
+
+// ANIMAÇÃO DO SCROLL
 
 ScrollReveal().reveal(".contact", {
     duration: 1500,
@@ -96,6 +98,18 @@ ScrollReveal().reveal(".budget2-form-img", {
     mobile: false,
 });
 ScrollReveal().reveal(".footer-fundo", {
+    duration: 1500,
+    distance: "50px",
+    delay: 200,
+    mobile: false,
+});
+ScrollReveal().reveal("#footer-box", {
+    duration: 1500,
+    distance: "50px",
+    delay: 200,
+    mobile: false,
+});
+ScrollReveal().reveal(".privacy-policy-text-container", {
     duration: 1500,
     distance: "50px",
     delay: 200,
