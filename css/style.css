@@ -582,6 +582,11 @@ header {
 
 /* CELULAR */
 @media (min-width: 280px) and (max-width: 767px) {
+    .cookies {
+        width: 100%;
+        left: 0;
+        height: auto;
+    }
     main {
         width: 100vw;
     }

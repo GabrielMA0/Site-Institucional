@@ -17,6 +17,11 @@ window.addEventListener("scroll", function () {
     }
 });
 
+window.onload = function () {
+    // Chame a função quando a página for carregada
+    checkCookieVisibility();
+};
+
 // Função para criar um cookie
 function setCookies() {
     let date = new Date();
@@ -46,9 +51,6 @@ function checkCookieVisibility() {
         containerCookies.classList.remove("hide");
     }
 }
-
-// Chame a função quando a página for carregada
-checkCookieVisibility();
 
 // ANIMAÇÃO DO SCROLL
 
