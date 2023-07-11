@@ -17,6 +17,39 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// Função para criar um cookie
+function setCookies() {
+    let date = new Date();
+    let year = date.getFullYear() + 1;
+    date.setFullYear(year);
+    let expires = date.toUTCString();
+
+    console.log(expires);
+
+    // Cria o cookie
+    document.cookie = `DivCookieshidden=true; expires=${expires}; path=/`;
+
+    checkCookieVisibility();
+}
+
+// Função para verificar se o cookie expirou e ajustar a visibilidade da div
+function checkCookieVisibility() {
+    const containerCookies = document.querySelector(".cookies");
+    const cookie = document.cookie;
+    const hiddenCookie = cookie.includes("DivCookieshidden=true");
+
+    if (hiddenCookie) {
+        // O cookie ainda não expirou, a div permanece escondida
+        containerCookies.classList.add("hide");
+    } else {
+        // O cookie expirou ou não existe, a div fica visível
+        containerCookies.classList.remove("hide");
+    }
+}
+
+// Chame a função quando a página for carregada
+checkCookieVisibility();
+
 // ANIMAÇÃO DO SCROLL
 
 ScrollReveal().reveal(".contact", {
@@ -112,6 +145,11 @@ ScrollReveal().reveal("#footer-box", {
 ScrollReveal().reveal(".privacy-policy-text-container", {
     duration: 1500,
     distance: "50px",
+    delay: 200,
+    mobile: false,
+});
+ScrollReveal().reveal(".cookies", {
+    duration: 1000,
     delay: 200,
     mobile: false,
 });
