@@ -29,8 +29,6 @@ function setCookies() {
     date.setFullYear(year);
     let expires = date.toUTCString();
 
-    console.log(expires);
-
     // Cria o cookie
     document.cookie = `DivCookieshidden=true; expires=${expires}; path=/`;
 
@@ -43,12 +41,12 @@ function checkCookieVisibility() {
     const cookie = document.cookie;
     const hiddenCookie = cookie.includes("DivCookieshidden=true");
 
-    if (hiddenCookie) {
+    if (!hiddenCookie) {
         // O cookie ainda não expirou, a div permanece escondida
-        containerCookies.classList.add("hide");
+        containerCookies.classList.remove("hide");
     } else {
         // O cookie expirou ou não existe, a div fica visível
-        containerCookies.classList.remove("hide");
+        containerCookies.classList.add("hide");
     }
 }
 
@@ -147,11 +145,6 @@ ScrollReveal().reveal("#footer-box", {
 ScrollReveal().reveal(".privacy-policy-text-container", {
     duration: 1500,
     distance: "50px",
-    delay: 200,
-    mobile: false,
-});
-ScrollReveal().reveal(".cookies", {
-    duration: 1000,
     delay: 200,
     mobile: false,
 });
